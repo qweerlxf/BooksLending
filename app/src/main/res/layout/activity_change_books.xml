@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="书籍名称："
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/bName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:hint="请输入书籍名称"
+            android:inputType="text"
+            android:selectAllOnFocus="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="书籍作者："
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/bWriter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:hint="请输入书籍作者"
+            android:inputType="text"
+            android:selectAllOnFocus="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="书籍类型："
+            android:textSize="20sp" />
+
+
+        <RadioGroup
+            android:id="@+id/bType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/bType_literature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="文学" />
+
+            <RadioButton
+                android:id="@+id/bType_philosophy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="哲学" />
+
+            <RadioButton
+                android:id="@+id/bType_poetry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="诗歌" />
+
+            <RadioButton
+                android:id="@+id/bType_fiction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小说" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bPictureSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/layout_border"
+        android:text="请选择书籍封面" />
+
+    <ImageView
+        android:id="@+id/bPicture"
+        android:layout_width="240dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/layout_border"
+            android:text="重置" />
+
+        <Button
+            android:id="@+id/change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/layout_border"
+            android:text="修改" />
+
+    </LinearLayout>
+
+</LinearLayout>

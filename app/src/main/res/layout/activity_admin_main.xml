@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.AdminMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_admin"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/admin" />
+
+        <TextView
+            android:id="@+id/tv_admin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:text="IREAD"
+            android:textSize="45sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/checkBooks"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/layout_border"
+        android:text="查看图书"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/addBooks"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/layout_border"
+        android:text="添加图书"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/updataBooks"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/layout_border"
+        android:text="修改图书"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/bt_out"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/layout_border"
+            android:text="退出"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
